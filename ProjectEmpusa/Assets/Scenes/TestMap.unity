@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates: []
-  name: CraftingProgress
+  name: FabricatorCraftingProgress
   priority: 0
   m_KeyCode: 0
   m_EaseType: 28
@@ -5108,6 +5108,8 @@ GameObject:
   - component: {fileID: 400184446}
   - component: {fileID: 400184445}
   - component: {fileID: 400184444}
+  - component: {fileID: 400184448}
+  - component: {fileID: 400184447}
   m_Layer: 0
   m_Name: Combiner
   m_TagString: Untagged
@@ -5179,6 +5181,39 @@ Transform:
   - {fileID: 29708166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400184447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400184443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e29feedc1ae74594585d58b82bbc4bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ItemGroup: {fileID: -1841151805687916582, guid: b07ec542a9523cd449dde4933944dd2c,
+    type: 2}
+--- !u!114 &400184448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400184443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68165cdf1896c89479a91b2478670c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveable: 1
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []
+  onChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -6597,7 +6632,7 @@ MonoBehaviour:
   m_Interruptable: 0
   m_RequiredIngredientsWindow: Inventory
   m_ResultStorageWindow: Inventory
-  m_CraftingProgressbar: CraftingProgress
+  m_CraftingProgressbar: PlayerCraftingProgress
   references:
     version: 2
     RefIds: []
@@ -6613,7 +6648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29feedc1ae74594585d58b82bbc4bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ItemGroup: {fileID: 8981082385679816718, guid: 1ae57b994efcab048a1bb130d4e11d83,
+  m_ItemGroup: {fileID: -4134682332670479508, guid: b07ec542a9523cd449dde4933944dd2c,
     type: 2}
 --- !u!114 &566423091
 MonoBehaviour:

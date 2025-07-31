@@ -66,6 +66,38 @@ MonoBehaviour:
   savingKey: Player
   savingRate: 60
   provider: 0
+--- !u!114 &-4134682332670479508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: PlayerCrafting
+  m_EditorClassIdentifier: 
+  m_GroupName: PlayerCrafting
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []
+--- !u!114 &-2344641071829367749
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: FabricatorCrafting
+  m_EditorClassIdentifier: 
+  m_GroupName: FabricatorCrafting
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []
 --- !u!114 &-2053995826780088665
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,6 +112,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
+--- !u!114 &-1841151805687916582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: CombinerCrafting
+  m_EditorClassIdentifier: 
+  m_GroupName: CombinerCrafting
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,19 +142,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: -9208489266173334408}
+  - {fileID: 120936926350039119}
   currencies:
   - {fileID: 4823760182202099014}
   raritys: []
   categories:
   - {fileID: 2056835402135894866}
   equipments: []
-  itemGroups: []
+  itemGroups:
+  - {fileID: -1841151805687916582}
+  - {fileID: -4134682332670479508}
+  - {fileID: -2344641071829367749}
   settings:
   - {fileID: 4713717961030173555}
   - {fileID: -2053995826780088665}
   - {fileID: 4356255323329687754}
   - {fileID: -8890713884733449943}
   - {fileID: 5503015120110023047}
+--- !u!114 &120936926350039119
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a78acd5557204d499bcf3420fd4ee78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Id: db599edf-cb96-4bb3-80b7-348d29621f71
+  m_ItemName: Spear
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: e50febd6717db2b43a8fa67d1259fa02, type: 3}
+  m_Prefab: {fileID: 6369345998678696669, guid: 386c2fe1205b054468b46d761ddcbfb2,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: 2056835402135894866}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 4823760182202099014}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 4823760182202099014}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 1
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: 
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2056835402135894866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +219,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4abab319188bac4a8515c585b13ba9d, type: 3}
-  m_Name: 
+  m_Name: None
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 0}
   name: None
